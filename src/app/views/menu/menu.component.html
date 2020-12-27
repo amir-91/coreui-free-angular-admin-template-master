@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Menu</strong> Elements
+        </div>
+        <div class="card-body">
+          <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">Select Menu Catogery</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0">Please select</option>
+                  <option value="Breakfast">Breakfast</option>
+                  <option value="Launch">Launch</option>
+                  <option value="Dinner">Dinner</option>
+                </select>
+              </div>
+            </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Dish Name</label>
+                <div class="col-md-9">
+                  <input type="text" id="name" name="phone" class="form-control" placeholder="Dish Name">
+                  <span class="help-block"></span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="textarea-input">Dish content</label>
+                <div class="col-md-9">
+                  <textarea id="about" name="content" rows="9" class="form-control" placeholder="content"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Price</label>
+                <div class="col-md-9">
+                  <input type="text" id="price" name="price" class="form-control" placeholder="Price">
+                  <span class="help-block"></span>
+                </div>
+              </div>
+        
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="file-input">home image</label>
+              <div class="col-md-9">
+                <input type="file" id="image" name="image">
+              </div>
+            </div>
+            
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="postData()"><i class="fa fa-dot-circle-o" ></i> Submit</button>
+          <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div><!--/.row-->
+
+
+
+<div class="col-sm-6 col-md-4" >
+    <div class="card border-success" id="card">
+      <div class="card-header">
+       title
+      </div>
+      <div class="card-img">
+        <img src="./src/assets/img/avatars/8.jpg" alt="announce-img">
+      </div>
+      <div class="card-body">
+    discription
+      </div>
+      
+      <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0" style="width: 50%; padding-bottom:10px ;" >
+        <button type="button" class="btn btn-block btn-danger active" aria-pressed="true">Danger</button>
+      </div>
+    </div>
+    
+  </div><!--/.col-->
+
+
+ 
+

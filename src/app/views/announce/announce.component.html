@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Basic Form</strong> Elements
+        </div>
+        <div class="card-body">
+          <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Event title</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="title">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="textarea-input">Event Details</label>
+                <div class="col-md-9">
+                  <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="Enter event details"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="date-input">Event Date</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                  <span class="help-block">Please enter a valid date</span>
+                </div>
+              </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="file-input">Insert Event Image</label>
+              <div class="col-md-9">
+                <input type="file" id="file-input" name="file-input">
+              </div>
+            </div>
+            
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)= "postData(); getData()"><i class="fa fa-dot-circle-o"></i> Submit</button>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+  </div><!--/.row-->
+
+
+
+<div class="col-sm-6 col-md-4" >
+    <div class="card border-success" id="card" *ngFor="let event of announceDetails[0].data">
+      <div class="card-header">
+       {{event.title}}
+       
+      </div>
+      <div class="card-img">
+        image
+        <!-- <img src="./src/assets/img/avatars/8.jpg" alt="announce-img"> -->
+      </div>
+      <div class="card-body">
+        {{event.discription}}
+      </div>
+      
+      <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0" style="width: 50%; padding-bottom:10px ;" >
+        <button type="button" class="btn btn-block btn-danger active" aria-pressed="true">Delete</button>
+      </div>
+    </div>
+    
+  </div><!--/.col-->
+
+
+ 
